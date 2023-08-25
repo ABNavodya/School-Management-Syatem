@@ -188,7 +188,7 @@ header {
     margin-right: 4rem;
 }
 
-categories_left p {
+.categories_left p {
     margin: 1rem 0 3rem;    
 }
 
@@ -264,7 +264,7 @@ categories_left p {
     border-color: var(--color-primary);
 }
 
-.corse_info {
+.course_info {
     padding: 2rem;
 }
 
@@ -273,3 +273,38 @@ categories_left p {
     font-size: 0.9rem;
 }
 
+/*-----------popular courses---------*/
+.faqs {
+    background: var(--color-bgl);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.faqs_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq_icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
