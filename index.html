@@ -14,6 +14,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">"
 
+        <!---------------------------------- SWIPER JS --------------------------------->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+        
         <link rel="stylesheet" href="./css/style.css">    
     </head>
     <body>
@@ -237,9 +241,101 @@
         <!-------------------------------------------------END OF FAQS-------------------------------------->
 
 
+        <section class="container testimonials_container mySwiper">
+            <h2>Students Testimonial</h2>
+            <div class="swiper mySwiper">
+                <artical class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg">
+                    </div>
+                    <div class="testamonial_info">
+                        <h5>Diana Ayi</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </p>
+                    </div>
+                </artical>
 
+                <artical class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar2.jpg">
+                    </div>
+                    <div class="testamonial_info">
+                        <h5>Ernest Achiver</h5>
+                        <small>Web Developer</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </p>
+                    </div>
+                </artical>
+
+                <artical class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar3.jpg">
+                    </div>
+                    <div class="testamonial_info">
+                        <h5>Edam Quist</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </p>
+                    </div>
+                </artical>
+
+                <artical class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar4.jpg">
+                    </div>
+                    <div class="testamonial_info">
+                        <h5>Hajja Bintu</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </p>
+                    </div>
+                </artical>
+
+                <artical class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar5.jpg">
+                    </div>
+                    <div class="testamonial_info">
+                        <h5>Jane Doe</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </p>
+                    </div>
+                </artical>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="./main.js"></script>
 
-
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              },
+            });
+        </script>
     </body>
 </html>
