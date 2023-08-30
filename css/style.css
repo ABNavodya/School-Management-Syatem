@@ -343,7 +343,7 @@ header {
 .testimonial_body::before {
     content: "";
     display: block;
-    background: var(--color-primary);
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
     width: 3rem;
     height: 3rem;
     position: absolute;
